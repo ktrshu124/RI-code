@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>SportsGrapher_Ryota Irie</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+
+  <section class="works">
+    <div class="works__inner inner">
+      <h2 class="works__title sec-title">WORKS</h2>
+      <div class="works__grid">
+        <button class="works__item big-box js-open-modal" data-slide-index="0">
+          <img src="./img/item1.jpg" alt="">
+        </button>
+        <button class="works__item js-open-modal" data-slide-index="1">
+          <img src="./img/item2.jpg" alt="">
+        </button>
+        <button class="works__item js-open-modal" data-slide-index="2">
+          <img src="./img/item3.jpg" alt="">
+        </button>
+        <button class="works__item js-open-modal" data-slide-index="3">
+          <img src="./img/item1.jpg" alt="">
+        </button>
+        <button class="works__item js-open-modal" data-slide-index="4">
+          <img src="./img/item2.jpg" alt="">
+        </button>
+        <button class="works__item js-open-modal" data-slide-index="5">
+          <img src="./img/item_V1.jpg" alt="">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="blank"></div>
+  
+  <section class="works">
+    <div class="works__inner inner">
+      <h2 class="works__title sec-title">WORKS</h2>
+      <div class="swiper2 works__swiper2">
+        <div class="works2__wrapper swiper-wrapper">
+          <div class="swiper-slide works2__wrapper">
+            <button class="works2__item big-box js-open-modal" data-slide-index="0">
+              <img src="./img/item1.jpg" alt="">
+            </button>
+          </div>
+          <div class="swiper-slide works2__wrapper">
+            <button class="works2__item js-open-modal" data-slide-index="1">
+              <img src="./img/item2.jpg" alt="">
+            </button>
+          </div>
+          <div class="swiper-slide works2__wrapper">
+            <button class="works2__item js-open-modal" data-slide-index="2">
+              <img src="./img/item3.jpg" alt="">
+            </button>
+          </div>
+          <div class="swiper-slide works2__wrapper">
+            <button class="works2__item js-open-modal" data-slide-index="3">
+              <img src="./img/item1.jpg" alt="">
+            </button>
+          </div>
+          <div class="swiper-slide works2__wrapper">
+            <button class="works2__item js-open-modal" data-slide-index="4">
+              <img src="./img/item2.jpg" alt="">
+            </button>
+          </div>
+          <div class="swiper-slide works2__wrapper">
+            <button class="works2__item js-open-modal" data-slide-index="5">
+              <img src="./img/item_V1.jpg" alt="">
+            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="blank"></div>
+
+
+      <!-- モーダル -->
+      <div class="modal" id="modal">
+        <div class="modal__overlay js-close-modal"></div>
+        <div class="modal__content">
+          <button class="modal__close-btn js-close-modal" aria-label="閉じる">
+            <img src="./img/close-icon.png" alt="">
+          </button>
+          <!-- スライダー -->
+          <div class="swiper modal__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide modal__slide">
+                <img src="./img/item1.jpg" alt="">
+              </div>
+              <div class="swiper-slide modal__slide">
+                <img src="./img/item2.jpg" alt="">
+              </div>
+              <div class="swiper-slide modal__slide">
+                <img src="./img/item3.jpg" alt="">
+              </div>
+              <div class="swiper-slide modal__slide">
+                <img src="./img/item1.jpg" alt="">
+              </div>
+              <div class="swiper-slide modal__slide">
+                <img src="./img/item2.jpg" alt="">
+              </div>
+              <div class="swiper-slide modal__slide">
+                <div class="movie__iframe">
+                  <iframe src="https://www.youtube.com/embed/4XTF16CcqPc?si=3diGPHexbP-JoWYv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

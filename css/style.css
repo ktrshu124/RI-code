@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myfont_logo";
+  src: url("../fonts/Baka Too Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "myfont_sectitle";
+  src: url("../fonts/AbolitionTest-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "myfont_text";
+  src: url("../fonts/BAHNSCHRIFT.TTF") format("truetype");
+}
+body {
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec-title {
+  font-family: "myfont_sectitle", sans-serif;
+  font-size: 32px;
+  letter-spacing: 4.48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.works {
+  background: rgba(17, 17, 17, 0.8);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.works__inner {
+  max-width: 1060px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.works__title {
+  color: #fff;
+}
+
+.works__grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.works__grid button {
+  display: block;
+}
+
+.works__item {
+  overflow: hidden;
+}
+.works__item:hover img {
+  transform: scale(105%);
+}
+.works__item img {
+  transition: transform 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .works__item.big-box {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .works__item.big-box img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+  background-color: rgba(120, 123, 131, 0.8);
+  overscroll-behavior-y: none;
+}
+
+/* モーダルがactiveの時 */
+.modal.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* モーダル背景のオーバーレイ部分 */
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* モーダルのコンテンツ */
+.modal__content {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* モーダルを閉じるボタン */
+.modal__close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Swiperの矢印部分 */
+@media (max-width: 768px) {
+  .modal .swiper-button-next,
+  .modal .swiper-button-prev {
+    display: none;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+.blank {
+  background: #fff;
+  width: 100%;
+  height: 200px;
+}
+
+.works__swiper2 {
+  margin-top: 30px;
+}
+
+.works2__wrapper {
+  transition-timing-function: linear;
+}
+
+.works2__wrapper {
+  margin-left: 10px;
+}
+.works2__wrapper img {
+  height: auto;
+  width: 100%;
+}
+
+.works2__item {
+  width: 100%;
+}
+.works2__item:hover {
+  opacity: 0.7;
+}
+
+.movie__iframe {
+  text-align: center;
+  padding: 50px;
+}
+.movie__iframe iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.7783505155;
+}
